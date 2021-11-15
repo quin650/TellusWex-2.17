@@ -1,0 +1,92 @@
+<!--
+Version V1.3
+* Added Logo to Navbar + Adjusted for mobile
+* Fixed Navbar to not touch scroll bar
+* Added Text Content
+
+Version V1.6
+*Added footer
+Version V1.8
+*Added Company Name to NavBar Menu
+Version V2.14
+*Successfully seperated out the header with function call from another sheet
+(workaround used: new section created to house the id call had dimensions fixed so they wont populate whole sheet)
+Version V2.16
+*Temporarily added orig/non-js header back in
+*Seperated footer into seperate page 
+Version V2.16
+*Seperated header and footer into seperate page 
+
+-->
+
+<!DOCTYPE html>									<!-- Required first line-->
+<html lang='en'>
+	<head>
+		<meta charset='UTF-8'>
+		<meta name='viewport' content='width=device-width, initial-scale-1.0'>
+		<meta http-equiv='X-UA-Compatible' content='ie=edge'>
+		<title>TellusWex</title>						<!-- Name shown on tab -->
+		<link rel='stylesheet' href='style.css'	<!-- Ties file to css sheet -->
+		<link rel='stylesheet' type:'text/css' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css'>
+		<script
+		  src="https://code.jquery.com/jquery-3.6.0.min.js"
+		  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+		  crossorigin="anonymous"></script>
+		<script type='text/javascript'>
+			 $(function(){
+			 $('#headr').load('header.html');
+			 });
+		</script>
+		
+		<script type='text/javascript'>
+			 $(function(){
+			 $('#footr').load('footer.html');
+			 });
+		</script>
+
+		
+	</head>
+	<body>	
+		<div class='container'><a id='top'></a>
+			
+			
+			
+			
+			
+<!--'navbar' goes here-->	
+<section  id="headr" class='forjssec'></section>
+		
+
+
+
+
+<!-- Body Content goes here-->
+			<section id='home'>
+				<p class='quote'>"Learning never exhausts the mind"</p>
+				<p>-Leonardo da Vinci</p>
+			</section>
+			<section>
+				<h1>Overview</h1>
+				<p>High Level</p>
+			</section>
+			<section id ='platform'>
+				<h1>Platform</h1>
+				<p>High Level</p>
+			</section>
+			<section>
+				<h1>Platform</h1>
+				<p>Low Level - <br> [Toggles: User | Creator | Procuror] </p>
+			</section>
+			
+			
+			
+			
+			
+			
+<!--'footer' goes here-->	
+<section id='footr'></section>
+			
+			
+		</div>	
+	</body>
+</html>
